@@ -347,7 +347,7 @@ function taskSelection(taskName, showTaskTransfer) {
         randomChemicalElement = arrayOfChemicalElements[randomInteger(0, arrayOfChemicalElements.length - 1)];
     } else if(taskName === 'sound-of-an-animal') {
         let randomIndexForSelectingTheSoundOfAnAnimal;
-        arrayOfAnimalImages = ['cock.jpg','cow.jpg','dog.jpg', 'pig.jpg'];
+        arrayOfAnimalImages = ['cock.jpg','cow2.jpg','dog.jpg', 'pig.jpg'];
         arrayOfAnimalSounds = ['rooster-sound','sound-of-a-cow','sound-of-a-dog','sound-of-a-pig'];
 
         randomIndexForSelectingTheSoundOfAnAnimal = randomInteger(0, arrayOfAnimalSounds.length - 1);
