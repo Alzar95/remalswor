@@ -58,6 +58,7 @@ body {
     border: 5px solid black;
     background: url("../images/background-modal.jpg");
     background-size: 100%;
+	overflow-y: auto;
     z-index: 2;
 }
 
