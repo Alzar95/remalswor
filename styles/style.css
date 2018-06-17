@@ -1,0 +1,337 @@
+body {
+    margin: 0;
+}
+
+.all-screen {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: url("../images/main-background.gif") no-repeat;
+    background-size: 100%;
+}
+
+.modal-spell-selection-window {
+    position: absolute;
+    width: 20%;
+    height: 15%;
+    top: 40%;
+    left: 40%;
+    text-align: center;
+    border: 5px solid black;
+    padding-top: 0.5%;
+    background: url("../images/background-modal.jpg");
+    background-size: 100%;
+    z-index: 2;
+}
+
+.modal-spell-selection-window .modal-button-fireball {
+    border-radius: 100px;
+    background: #ff960b;
+    border: 1px solid #ff960b;
+}
+
+.modal-spell-selection-window .modal-button-fireball img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.modal-spell-selection-window .modal-button-medical-rain {
+    border-radius: 100px;
+    background: #72e0ff;
+    border: 1px solid #72e0ff;
+}
+
+.modal-spell-selection-window .modal-button-medical-rain img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.modal-task-selection-window {
+    display: none;
+    position: absolute;
+    width: 21%;
+    height: 54%;
+    top: 20%;
+    left: 40%;
+    border: 5px solid black;
+    background: url("../images/background-modal.jpg");
+    background-size: 100%;
+    z-index: 2;
+}
+
+.task-screen {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: #dad9dc;
+}
+
+.highscore-table-screen {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    color: white;
+    background: black;
+    z-index: 3;
+}
+
+.highscore-table-screen span {
+    position: absolute;
+    left: 43.3%;
+    font-size: 40px;
+    font-weight: bold;
+    color: red;
+}
+
+.highscore-table-screen button {
+    position: absolute;
+    font-size: 24px;
+    top: 49%;
+    right: 5%;
+    border: 2px solid #b21f2d;
+    color: white;
+    background: red;
+}
+
+.highscore-table-screen .highscore-table {
+    position: absolute;
+    width: 80%;
+    height: 80%;
+    left: 5%;
+    top: 10%;
+    border: 1px solid #ffffff;
+    overflow-y: auto;
+}
+
+.highscore-table-screen .highscore-table table {
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    border: 2px solid #ffffff;
+}
+
+.highscore-table-screen table td, th {
+    border: 1px solid #ffffff;
+}
+
+.task {
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    font-size: 24px;
+}
+
+.data-about-the-characters {
+    display: inline-block;
+    width: 100%;
+}
+
+.data-on-the-hero {
+    display: inline-block;
+    width: 49%;
+    text-align: left;
+}
+
+.progressbar-for-hero {
+    position: absolute;
+    width: 40%
+}
+
+.data-on-the-enemy {
+    display: inline-block;
+    width: 50.5%;
+    text-align: right;
+}
+
+.progressbar-for-enemy {
+    position: absolute;
+    width: 40%;
+    right: 0;
+}
+
+.character-names {
+    font-size: 28px;
+    font-weight: bold;
+    color: orange;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+}
+
+.main-central-field {
+    position: absolute;
+    width: 60%;
+    height: 40%;
+    top: 40%;
+    left: 20%;
+}
+
+.main-central-field .hero {
+    position: absolute;
+    width: 15%;
+    height: 100%;
+}
+
+.main-central-field .enemy {
+    position: absolute;
+    width: 20%;
+    height: 100%;
+    right: 0;
+}
+
+.main-central-field .field-of-magic {
+    position: absolute;
+    width: 80%;
+    height: 100%;
+    left: 10%;
+}
+
+.field-for-therapeutic-rain {
+    position: absolute;
+    width: 20%;
+    height: 60%;
+    top: 30%;
+    left: 17%;
+}
+
+.alphabet-sorting {
+    display: inline-block;
+    list-style-type: none;
+}
+
+.alphabet-sorting li {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+}
+
+.task .the-fourth-is-not-suitable {
+    display: inline-block;
+}
+
+.task .the-fourth-is-not-suitable label > input {
+    visibility: hidden;
+}
+
+.task .the-fourth-is-not-suitable label > input + img {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.task .the-fourth-is-not-suitable label > input:checked + img {
+    border: 2px solid #ff0000;
+}
+
+.task .the-first-color-square-for-the-task-blend-of-colors {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: -40px;
+}
+
+.task .the-second-color-square-for-the-task-blend-of-colors {
+    display: inline-block;
+    width: 100px;
+    height: 100px;
+    margin-bottom: -40px;
+}
+
+.task .block-in-which-there-is-a-geometric-figure {
+    position: relative;
+}
+
+.task .block-in-which-there-is-a-geometric-figure hr {
+    border: 1px solid #000000;
+}
+
+.task .block-in-which-there-is-a-geometric-figure .width-line {
+    margin-left: 0;
+}
+
+.task .block-in-which-there-is-a-geometric-figure .height-line {
+    position: absolute;
+    right: 0;
+    margin: 0;
+}
+
+.task .block-in-which-there-is-a-geometric-figure .digital-value-of-the-width-of-the-geometric-figure-in-centimeters {
+    position: absolute;
+    top: -19px;
+    background: #dad9dc;
+}
+
+.task .block-in-which-there-is-a-geometric-figure .digital-value-of-the-height-of-the-geometric-figure-in-centimeters {
+    position: absolute;
+    top: 45px;
+    right: -35px;
+    background: #dad9dc;
+}
+
+.task .block-in-which-there-is-a-geometric-figure .random-geometric-figure {
+    background: yellow;
+    border: 1px solid #000000;
+}
+
+.axis path, .axis line {
+    fill: none;
+    stroke: #333;
+}
+.axis .grid-line {
+    stroke: #000;
+    stroke-opacity: 0.2;
+}
+.axis text {
+    font: 10px Verdana;
+}
+.dot {
+    stroke: steelblue;
+    fill: lightblue;
+}
+
+.task .pictures-of-animals {
+    display: inline-block;
+}
+
+.task .pictures-of-animals label > input {
+    visibility: hidden;
+}
+
+.task .pictures-of-animals label > input + img {
+    cursor: pointer;
+    border: 2px solid transparent;
+}
+
+.task .pictures-of-animals label > input:checked + img {
+    border: 2px solid #ff0000;
+}
+
+.fireball-for-hero {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation-name: fireball-for-hero-animation;
+    animation-duration: 1s;
+    animation-direction: reverse;
+}
+
+@keyframes fireball-for-hero-animation {
+    0% {left:82%; top:25%; }
+    100%   {left:8%; top:25%; }
+}
+
+.fireball-for-enemy {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    animation-name: fireball-for-enemy-animation;
+    animation-duration: 1s;
+    animation-direction: reverse;
+}
+
+@keyframes fireball-for-enemy-animation {
+    0% {left:5%; top:25%; }
+    100%   {left:70%; top:25%; }
+}

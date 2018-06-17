@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Game</title>
+    <script src="http://d3js.org/d3.v3.min.js"> </script>
+    <link href="styles/style.css" rel="stylesheet" type="text/css">
+
+    <link href="libraries/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css">
+    <link href="libraries/jquery-ui-1.12.1.custom/jquery-ui.min.css" rel="stylesheet" type="text/css">
+    <script src="libraries/jquery/jquery-3.3.1.min.js"></script>
+    <script src="libraries/jquery-ui-1.12.1.custom/jquery-ui.min.js"></script>
+    <script src="libraries/bootstrap/js/bootstrap.min.js"></script>
+</head>
+<body>
+<div class="all-screen">
+    <div class="modal-spell-selection-window">
+        <button class="modal-button-fireball" onclick="taskScreen.showModalTaskSelectionWindow('fireball')">
+            <img src="images/fireball.png" alt="Fireball"></button>
+        <button class="modal-button-medical-rain" onclick="taskScreen.showModalTaskSelectionWindow('medical-rain')">
+            <img src="images/medical-rain.jpg" alt="Medical rain"></button>
+
+    </div>
+    <div class="modal-task-selection-window">
+        <ul>
+            <li><input type="button" value="Арифметика" onclick="taskScreen.showTaskScreen('arithmetic')"></li>
+            <li><input type="button" value="Перевод" onclick="taskScreen.showTaskScreen('transfer')"></li>
+            <li><input type="button" value="Последовательность" onclick="taskScreen.showTaskScreen('sequence')"></li>
+            <li><input type="button" value="Аудирование" onclick="taskScreen.showTaskScreen('listening')"></li>
+            <li><input type="button" value="Лишнее" onclick="taskScreen.showTaskScreen('superfluous')"></li>
+            <li><input type="button" value="Сравнение чисел" onclick="taskScreen.showTaskScreen('comparison-of-numbers')"></li>
+            <li><input type="button" value="Перевод единиц измерения" onclick="taskScreen.showTaskScreen('translation-of-measurement-units')"></li>
+            <li><input type="button" value="Смесь цветов" onclick="taskScreen.showTaskScreen('blend-of-colors')"></li>
+            <li><input type="button" value="Периметр фигур" onclick="taskScreen.showTaskScreen('perimeter-of-figures')"></li>
+            <li><input type="button" value="Уравнение" onclick="taskScreen.showTaskScreen('the-equation')"></li>
+            <li><input type="button" value="Точка координат" onclick="taskScreen.showTaskScreen('point-of-coordinates')"></li>
+            <li><input type="button" value="Химический элемент" onclick="taskScreen.showTaskScreen('chemical-element')"></li>
+            <li><input type="button" value="Звук животного" onclick="taskScreen.showTaskScreen('sound-of-an-animal')"></li>
+        </ul>
+    </div>
+
+    <div class="data-about-the-characters">
+    <div class="data-on-the-hero">
+        <span class="character-names">Remalswor</span>
+        <div class="progressbar-for-hero"></div>
+    </div>
+
+    <div class="data-on-the-enemy">
+        <span class="character-names name-of-the-enemy"></span>
+        <div class="progressbar-for-enemy"></div>
+    </div>
+    </div>
+
+
+    <div class="main-central-field">
+        <img src="images/hero.gif" class="hero">
+        <svg class="enemy">
+
+        </svg>
+    </div>
+
+
+    <div class="field-for-therapeutic-rain">
+
+    </div>
+</div>
+<div class="task-screen">
+
+    <div class="task">
+
+    </div>
+</div>
+<div class="highscore-table-screen">
+    <span>Game over</span>
+    <button onclick="location.reload()">Try again</button>
+    <div class="highscore-table">
+    <table>
+        <tr>
+            <th>Name hero</th>
+            <th>Killed monsters</th>
+        </tr>
+    </table>
+    </div>
+</div>
+
+<script src="src/script.js"></script>
+</body>
+</html>
